@@ -2,7 +2,7 @@
 
 ## Overview
 Static landing page built from the provided desktop mock-up using Bootstrap 5.3 and SCSS.
-The layout has been adapted for mobile devices, as no mobile version was provided.
+The layout has been adapted for mobile devices.
 
 ## Tech Stack
 - HTML5
@@ -18,4 +18,4 @@ The layout has been adapted for mobile devices, as no mobile version was provide
 - Modern and clean overall aesthetic
 
 ### What could be improved
-- No comments. Every sections was easy to understand
+- No comments. Every sections was easy to understand!
