@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Odoo Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico"/>
+    <!-- Bootstrap Responsive -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"/>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <!-- NAVBAR -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3">
+    <div class="container col-xl-10 col-xxl-8 px-4" style="border-color: rgba(255, 255, 255, 0.3) !important;">
+      <a class="navbar-brand fw-bold" href="#">
+        <img src="./assets/img/odoo-white.svg" width="80" height="50" role="img" aria-label="Odoo"></img>
+       </a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav gap-lg-3 mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pages">Pages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#app">App</a></li>
+          <li class="nav-item"><a class="nav-link" href="#docs">Docs</a></li>
+        </ul>
+        <ul class="navbar-nav mr-0 gap-3">
+          <li class="nav-item d-lg-block d-none me-md-2">
+            <a class="nav-link" href="#signin">Sign in</a>
+          </li>
+          <button type="button" class="nav-item btn btn-light"><i class="bi bi-bag"></i> Buy now</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- HERO -->
+  <header class="hero-section text-white justify-content-between">
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <!-- Left Content (Description) -->
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold mb-5">Development<br>done right</h1>
+          <p class="col-lg-10 mb-3 lead mb-6">
+            Build a beautiful, modern website with Bootstrap components built from scratch.
+          </p>
+          <button type="button" class="btn btn-light btn-lg fw-semibold px-4 py-3" style="font-size: medium;">
+            Get started +
+          </button>
+          <div class="trusted-logos d-flex gap-4 small flex-wrap py-6">
+            <p class="small mb-2">Trusted by:</p>
+            <span><img src="./assets/img/google-white.svg" width="70" height="auto" role="img" aria-label="Google"></img></span>
+            <span><img src="./assets/img/spotify-white.svg" width="70" height="auto" role="img" aria-label="Spotify"></img></span>
+            <span><img src="./assets/img/airbnb-white.svg" width="70" height="auto" role="img" aria-label="Airbnb"></img></span>
+            <span><img src="./assets/img/paypal-white.svg" width="70" height="auto" role="img" aria-label="Paypal"></img></span>
+          </div>
+        </div>
+        <!-- Content Right (card) -->
+        <div class="col-md-10 mx-auto col-lg-5">
+          <div class="card hero-card p-4">
+            <div class="d-flex justify-content-between">
+              <h6 class="fw-bold">Manage cards</h6>
+              <button type="button" class="btn btn-outline-dark btn-sm small px-3" style="border-color: rgb(206, 206, 206);">
+                Add new
+              </button>
+            </div>
+            <div class="hero-credit-card rounded-4 py-3 px-2">
+              <div class="card py-3 px-4 bg-dark text-white rounded-4">
+                <div id="card-top">
+                  <div class="d-flex justify-content-between py-2">
+                    <img src="./assets/img/mastercard.svg" width="40" height="auto" role="img" aria-label="mastercard"></img>    
+                    <button type="button" class="btn btn-secondary btn-sm" style="background-color: rgb(78, 209, 165);">
+                      Active
+                    </button>
+                  </div>
+                  <div class="card-number text-start pt-2">
+                    <span class="card-title">CARD NUMBER</span>
+                    <p class="card-n text-nowrap">4358 - 7421 - 9256 - 6682</p>
+                  </div>
+                  <div class="credit-row row text-start g-2">
+                    <div class="col">
+                      <span class="card-title">NAME</span>
+                       <P class="card-content">John Snow</P>
+                    </div>
+                    <div class="col">
+                      <span class="card-title">EXPIRY DATE</span>
+                      <P class="card-content">11/23</P>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Transactions list -->
+              <div class="d-flex flex-column flex-md-row gap-4 py-md-5 align-items-center justify-content-center">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item d-flex gap-3 py-3 px-0 text-start">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">Starbucks</h6>
+                        <p class="mb-0 opacity-75 small">Pending - San Francisco, United States</p>
+                      </div>
+                      <small class="fw-bold text-nowrap">$63.50 USD</small>
+                    </div>
+                  </a>
+                  <a class="list-group-item d-flex gap-3 py-3 px-0 text-start">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h6 class="mb-0">Nike Sports</h6>
+                        <p class="mb-0 small opacity-75">Pending - Lisbon, Portugal</p>
+                      </div>
+                      <small class="fw-bold text-nowrap">$129,00 USD</small>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card-body py-1 px-0">
+                <a class="link icon-link icon-link-hover " href="#">View all
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+<!------------- FEAUTURES 1 ------------------>
+<section id="features" class="container col-xl-10 col-xxl-8 px-4 py-5 mt-7">
+    <div class="row align-items-center">
+      <!-- Left Column -->
+       <div class="col-lg-7">
+        <div class="cards-wrapper">
+          <div class="img-btn-wrapper">
+            <button type="button" class="btn btn-light btn-play" style="--bs-btn-font-size: .80rem;">
+              Play video<i class="bi bi-play"></i>
+            </button>
+            <img src="/assets/img/img_01.jpg" alt="Tools Preview Main" class="tools-image img-fluid shadow-sm">
+          </div>
+            <!-- Overlapping Text Card -->
+             <div class="card overlay-card px-4 px-md-5 py-3 rounded-4 border-light-subtle">
+              <h6 class="py-3">Awesome projects</h6>
+              <div class="pb-4">
+                <p>Create the new logo</p>
+                <div class="progress" role="progressbar" aria-label="Progress bar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 2px ">
+                  <div class="progress-bar bg-warning" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="pb-4">
+                <p>Set up the color palette</p>
+                <div class="progress" role="progressbar" aria-label="Progress bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 2px ">
+                  <div class="progress-bar bg-warning" style="width: 50%"></div>
+                </div>
+              </div>
+              <div class="pb-4">
+                <p>Wireframe and prototype</p>
+                <div class="progress" role="progressbar" aria-label="Progress bar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 2px ">
+                  <div class="progress-bar bg-warning" style="width: 75%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column -->
+      <div class="col-md-10 mx-auto col-lg-5 text-center text-lg-start">
+        <span class="tools-badge mb-3 rounded-5 d-inline-block">Tools</span>
+        <h3 class="fw-bold mb-3">
+          We build for designers and developers
+        </h3>
+        <p class="text-secondary fw-semibold lh-lg">
+          Get components and examples, including tons of variables
+          that will help you grow your business.
+        </p>
+      </div>
+    </div>
+</section>
+<!------------- FEAUTURES 2 ------------->
+<section class="container col-xl-10 col-xxl-8 px-4 py-5 my-8">
+    <div class="row align-items-center">
+      <!-- Left Column -->
+      <div class="features-2 col-md-10 mx-auto col-lg-5 pe-3">
+        <span class="features-badge mb-3 rounded-5 d-inline-block">Features</span>
+        <h5 class="fw-bold mb-3 lh-lg">Get components and examples, including tons of variables 
+          that will help you grow your business.</h5>
+        <ul class="list-unstyled text-muted lh-lg">
+          <li><i class="bi bi-check-square-fill pe-3"></i>Perfect for modern startups</li>
+          <li><i class="bi bi-check-square-fill pe-3"></i>Fully customizable and scalable</li>
+        </ul>
+      </div>
+
+      <!-- Right Column (Image) -->
+      <div class="col-lg-7">
+        <div class="image-wrapper-2">
+          <button type="button" class="btn btn-light btn-play-2" style="--bs-btn-font-size: .80rem;">Play video 
+            <i class="bi bi-play"></i>
+          </button>
+          <img 
+            src="/assets/img/img_02.jpg" 
+            alt="Feautures Preview" 
+            class="img-fluid tools-image rounded-4"
+          >
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- FEATURES 3 -->
+<section class="container col-xl-10 col-xxl-8 px-4 py-5 my-8">
+  <div class="row align-items-center">
+    <!-- Column Left (Masonry Cards)-->
+     <div class="masonry-padding col-lg-7 pe-8">
+      
+      <div class="row g-3 justify-content-center" 
+      data-masonry='{"percentPosition": true }'>
+        <!-- Social Card -->
+        <div class="col-sm-6 mt-8">
+          <div class="card rounded-4 border-light-subtle shadow-sm">
+            <img
+              src="/assets/img/person_03.jpg" 
+              alt="Feautures Preview"
+              class="card-img-top">
+            <div class="card-body d-flex justify-content-between align-items-center">
+              <div class="d-flex float-start gap-3 align-items-center">
+                <span class="badge-box">JH</span>
+                <p class="fw-bold small my-0">Jimmy Hendrix</p>
+              </div>
+              <i class="bi bi-heart"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Airbnb Card -->
+        <div class="col-sm-6">
+            <div class="card rounded-4 border border-light-subtle shadow-sm text-center py-4">
+              <div class="card-body">
+                <span><img src="/assets/img/airbnb.svg" alt="Airbnb" style="width: 6rem;"></span>
+                <div class="py-4">
+                  <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                  <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                  <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                  <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                  <i class="bi bi-star" style="color: rgb(186, 185, 185);"></i>
+                </div>
+                <div>
+                  <p class="card-title fw-bold small my-0">4.95 out of 5 stars</p>
+                  <p class="card-subtitle small text-secondary my-0">from 23 reviews</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Website kit Card -->
+        <div class="col-sm-6">
+          <div class="card rounded-4 border border-light-subtle shadow-sm text-center py-3">
+            <div class="card-body">
+              <img src="/assets/img/company_01.png" alt="Company" style="width: 5rem; border-radius: 50%;">
+              <p class="card-title fw-bold small py-3">Website UI Kit</p>
+              <div class="pb-4">
+                <img class="avatar" src="/assets/img/person_01.jpg" alt="Avatar 1">
+                <img class="avatar" src="/assets/img/person_02.jpg" alt="Avatar 2">
+                <img class="avatar" src="/assets/img/person_03.jpg" alt="Avatar 3">
+              </div>
+              <div class="border-top pt-3">
+                <i class="bi bi-paperclip" style="transform: rotate(45deg);"></i>
+                <i class="bi bi-eye px-4"></i>
+                <i class="bi bi-heart"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Components+ Card -->
+        <div class="col-sm-6">
+          <div class="card rounded-4 border-light-subtle px-1 shadow-sm">
+            <div class="card-body d-flex align-items-center">
+              <i class="bi bi-check-circle-fill m-0" style="font-size: 2em; color: #00ccb4;"></i>
+                <div class="text-start ps-3">
+                  <p class="card-title fw-bold small my-0">300+ components</p>
+                  <p class="card-text text-secondary my-0" style="font-size: 0.8rem;">Build to be customized.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+  <!-- Right: Text Content -->
+   <div class="col-md-10 mx-auto col-lg-5 text-center text-lg-start">
+    <span class="primary-badge mb-3 rounded-5 d-inline-block">Technologies</span>
+    <h3 class="fw-bold mb-3">
+       We use the latest technologies on the market
+    </h3>
+    <p class="text-secondary fw-semibold lh-lg">Get components and examples, including tons of variables that will help you grow your business.</p>
+    <a class="link-offset-3" href="#">See case studies</a>
+  </div>
+</div>
+</section>
+<!-- SECTION 4 -->
+<section class="container col-xl-10 col-xxl-8 px-4 py-5">
+  <div class="row align-items-center">
+    <!-- Left Column -->
+     <div class="col-md-10 mx-auto col-lg-5 text-center text-lg-start">
+      <span class="tools-badge mb-3 rounded-5 d-inline-block">Easy to install</span>
+      <h3 class="fw-bold mb-3">Download, install and run.</h3>
+      <p class="text-secondary fw-semibold lh-lg mb-6">Get components and examples, including tons of variables that will help you grow your business.</p>
+      <div class="buttons-wrap d-flex gap-2">
+        <button type="button" class="btn btn-dark px-3 me-4" style="background-color: #0b114a; color: white;">
+          <i class="bi bi-apple float-start pe-2" style="font-size: 1.8em;"></i>
+          <span class="m-0 d-flex" style="font-size: x-small;">Download on the</span>
+          App Store
+        </button>
+        <button type="button" class="btn btn-dark px-3" style="background-color: #0b114a; color: white;">
+          <i class="bi bi-google-play float-start pe-2" style="font-size: 1.8em;"></i>
+          <span class="m-0 d-flex" style="font-size: x-small;">Download on the</span>
+          Play Store
+        </button>
+      </div>
+    </div>
+    <!-- Right Column (Image) -->
+    <div class="col-lg-7">
+      <div class="image-wrapper-2">
+        <button type="button" class="btn btn-light btn-play-2" style="font-size: .80rem;">Play video 
+          <i class="bi bi-play"></i>
+        </button>
+        <img src="/assets/img/img_03.jpg" alt="Feautures Preview" class="img-fluid tools-image rounded-4">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- END SECTION (Blue Section) -->
+<section class="container col-xl-10 col-xxl-8 blue-section">
+  <div class="row align-items-center justify-content-between">
+    <div class="col-lg-7">
+      <h6 class="fw-bold text-white">Infinite solutions</h6>
+      <p>Intuitive markup, powerful and lightning-fast build tools, everything you need to turn your ideas into incredible products.</p>
+    </div>
+    <div class="col-md-10 mx-auto col-lg-5 text-end">
+      <button type="button" class="btn btn-light btn-sm py-2 px-3">Learn more 
+      <i class="bi bi-arrow-right-short"></i>
+    </button>
+  </div>
+</div>
+</section>
+
+<!-- AWARDS SECTION -->
+<section class="awards py-8 bg-light mt-8">
+  <div class="container col-xl-10 col-xxl-8">
+    <!-- Section header -->
+    <div class="pb-6">
+      <span class="primary-badge mb-3 rounded-5 d-inline-block">Awards</span>
+      <h5 class="fw-bold">Awards for design, creativity, and innovation on the Internet</h5>
+    </div>
+
+    <!-- ONE UP ONE DOWN CARD ROW -->
+  <div class="awards-bleed">
+    <div class="row gap-4">
+      <!--Airbnb Card-->
+      <div class="col down align-self-end">
+        <div class="card h-100 rounded-4 border-light-subtle shadow-sm text-center p-4">
+          <div class="card-body">
+            <span><img src="/assets/img/airbnb.svg" alt="Airbnb" style="width: 6rem;"></span>
+              <div class="py-4">
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(186, 185, 185);"></i>
+              </div>
+              <div>
+                <p class="card-title fw-bold small my-0">4.95 out of 5 stars</p>
+                <p class="card-subtitle small text-secondary my-0">from 23 reviews</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--Amazon card-->
+      <div class="col">
+        <div class="card h-100 rounded-4 border-light-subtle shadow-sm text-center p-4">
+          <div class="card-body">
+            <span><img src="/assets/img/amazon.svg" alt="Amazon" style="width: 6rem;"></span>
+              <div class="card-text">
+                <p class="small text-secondary pt-4">They build modern-looking websites easily using Tabs.</p>
+                <a class="link-dark icon-link icon-link-hover " href="#">Icon link
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--Slack Card-->
+      <div class="col down">
+        <div class="card h-100 rounded-4 border-light-subtle shadow-sm text-center p-4">
+          <div class="card-body">
+            <span><img src="/assets/img/slack.svg" alt="Slack" style="width: 6rem;"></span>
+              <div class="card-text">
+                <p class="small text-secondary pt-4">They build modern-looking websites easily using Tabs.</p>
+                <a class="link-dark icon-link icon-link-hover " href="#">Icon link
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--Spotify Card-->
+        <div class="col">
+        <div class="card h-100 rounded-4 border border-light-subtle shadow-sm text-center p-4">
+          <div class="card-body">
+            <span><img src="/assets/img/spotify.svg" alt="Spotify" style="width: 6rem;"></span>
+              <div class="py-4">
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(255, 238, 0);"></i>
+                <i class="bi bi-star" style="color: rgb(186, 185, 185);"></i>
+              </div>
+              <div>
+                <p class="card-title fw-bold small my-0">4.95 out of 5 stars</p>
+                <p class="card-subtitle small text-secondary my-0">from 23 reviews</p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!--Paypal Card-->
+      <div class="col down">
+       <div class="card rounded-4 border-light-subtle shadow-sm text-center p-4">
+          <div class="card-body">
+            <span><img src="/assets/img/paypal.svg" alt="Paypal" style="width: 6rem;"></span>
+              <div class="card-text">
+                <p class="small text-secondary pt-4">They build modern-looking websites easily using Tabs.</p>
+                <a class="link-dark icon-link icon-link-hover " href="#">Icon link
+                  <i class="bi bi-arrow-right-short"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Q&A SECTION -->
+ <section class="container col-xl-10 col-xxl-8 py-5 mt-8 text-center">
+  <!-- Section header -->
+   <div class="pb-6">
+      <h2 class="fw-bold">Helpful answers</h2>
+      <p class="text-secondary">
+        Start building fast, beautiful, and modern-looking websites in no time.
+      </p>
+    </div>
+    <!-- Accorditions-->
+    <div class="row text-start align-items-center gap-4 mb-2">
+      <div class="col">
+        <div class="accordion" id="accordionExample">
+          
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="bi bi-file-earmark pe-3"></i> Which license do I need?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Hello everyone! Number 1.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item my-5 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <i class="bi bi-unlock2 pe-3"></i> How do I get access to my database?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Hello everyone! Number 2.</div>
+            </div>
+          </div>
+          
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <i class="bi bi-folder pe-3"></i> How do I see previous orders?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Hello everyone! Number 3.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="col">
+        <div class="accordion" id="accordionExample">
+          
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <i class="bi bi-file-earmark pe-3"></i> Which license do I need?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Hello everyone! Number 4.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item my-5 shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <i class="bi bi-unlock2 pe-3"></i> How do I get access to my database?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Hello everyone! Number 5.</div>
+            </div>
+          </div>
+          
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                <i class="bi bi-folder pe-3"></i> How do I see previous orders?
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">Hello everyone! Number 6.</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--End Section-->
+   <div class="my-8 pb-6">
+      <h5 class="fw-bold mb-4">I want to start a new project.</h5>
+      <button type="button" class="btn btn-primary px-4 py-2 me-5" style="color: white;">
+        Buy now <i class="bi bi-arrow-right-short"></i>
+      </button>
+      <a class="link-dark fw-bold fs-6 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+        Learn more
+      </a>
+    </div>
+ </section>
+
+ <!-- FOOTER -->
+  <footer class="footer pt-8">
+    <div class="container col-xl-10 col-xxl-8 align-items-center">
+      <!-- Top -->
+      <div class="row justify-content-between pb-3">
+        <div class="col-md-10 mx-auto col-lg-5">
+        <h5>Brilliant solutions for you idea</h5>
+          <p class="small">Modern looking websites.</p>
+        </div>
+          <div class="col-lg-7 d-grid gap-3 d-md-block text-end">
+            <button type="button" class="btn btn-light justify-content-between py-2" style="font-size: small;">
+            <i class="bi bi-journals" style="color: #007cf8;"></i> Documentation
+            </button>
+            <button type="button" class="btn btn-primary px-3 py-2" style="color: white; font-size: small;">
+            Purchase now</button>
+        </div>
+        </div>
+        <!-- Center -->
+         <div class="row justify-content-between">
+          <div class="col-md-10 mx-auto col-lg-5 pb-3">
+            <img src="/assets/img/odoo-white.svg" alt="Odoo" style="width: 5rem;">
+            <p class="py-4 pe-8 small fw-light" style="color: rgba(255, 255, 255, 0.8)">
+              Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
+            </p>
+            <div class="d-flex gap-4 small" style="color: rgba(255, 255, 255, 0.8)">
+              <a href="dribble"><i class="bi bi-dribbble"></i></a>
+              <a href="github"><i class="bi bi-github"></i></a>
+              <a href="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-7 align-items-center pb-3">
+            <div class="row">
+           <div class="col">
+            <h6 class="text-white">Account</h6>
+            <ul class="nav flex-column small">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Profile</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Settings</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Billing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Notifications</a>
+              </li>
+          </div>
+          <div class="col">
+            <h6 class="text-white">About</h6>
+            <ul class="nav flex-column small">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Services</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Contact</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h6 class="text-white">Company</h6>
+            <ul class="nav flex-column small">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Community</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Help center</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Support</a>
+              </li>
+            </ul>
+          </div>
+
+         </div>      
+          </div>
+          </div>
+
+        <!-- Bottom -->
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-3 border-top">
+          <p class="small">&copy;<strong>Odoo</strong> All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="fw-light" style="color: rgba(255, 255, 255, 0.5)">
+              Terms
+            </li>
+            <li class="ms-3 fw-light" style="color: rgba(255, 255, 255, 0.5)">
+              Privacy
+            </li>
+            <li class="ms-3 fw-light" style="color: rgba(255, 255, 255, 0.5)">
+              Cookies
+            </li>
+          </ul>
+        </div>
+        </div>
+      </footer>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+<!-- Masonry CDN -->
+<script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" class="astro-vvvwv3sm"></script>
+</body>
+</html>
